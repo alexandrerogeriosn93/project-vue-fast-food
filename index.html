@@ -31,19 +31,13 @@
           <div class="col-md-6">
             <div class="row mt-2">
               <div class="col">
-                <img
-                  src="assets/img/default/pao_superior.png"
-                  alt="Pão superior"
-                />
-                <img src="assets/img/default/alface.png" alt="Alface" />
-                <img src="assets/img/default/molho.png" alt="Molho" />
-                <img src="assets/img/default/molho.png" alt="Molho" />
-                <img src="assets/img/default/molho.png" alt="Molho" />
-                <img src="assets/img/default/hamburguer.png" alt="Hambúrgue" />
-                <img
-                  src="assets/img/default/pao_inferior.png"
-                  alt="Pão inferior"
-                />
+                <img :src="bread[0]" alt="Pão superior" />
+                <img :src="lettuce" alt="Alface" />
+                <img :src="ketchup" alt="Molho" />
+                <img :src="mustard" alt="Molho" />
+                <img :src="mayonnaise" alt="Molho" />
+                <img :src="hamburger" alt="Hambúrgue" />
+                <img :src="bread[1]" alt="Pão inferior" />
               </div>
             </div>
           </div>
