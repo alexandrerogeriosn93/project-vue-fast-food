@@ -75,7 +75,12 @@
                   <div class="card-header">Saladas</div>
                   <div class="card-body">
                     <div class="form-check">
-                      <input type="checkbox" class="form-check-input" />
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value="lettuce"
+                        v-model="inputSalad"
+                      />
                       <label class="form-check-label">Alface</label>
                     </div>
                   </div>
@@ -88,15 +93,30 @@
                   <div class="card-header">Molhos</div>
                   <div class="card-body">
                     <div class="form-check form-check-inline">
-                      <input type="checkbox" class="form-check-input" />
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value="ketchup"
+                        v-model="inputSauce"
+                      />
                       <label class="form-check-label">Ketchup</label>
                     </div>
                     <div class="form-check form-check-inline">
-                      <input type="checkbox" class="form-check-input" />
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value="mustard"
+                        v-model="inputSauce"
+                      />
                       <label class="form-check-label">Mostarda</label>
                     </div>
                     <div class="form-check form-check-inline">
-                      <input type="checkbox" class="form-check-input" />
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value="mayonnaise"
+                        v-model="inputSauce"
+                      />
                       <label class="form-check-label">Maionese</label>
                     </div>
                   </div>
@@ -109,15 +129,30 @@
                   <div class="card-header">Tipo de hambúrguer</div>
                   <div class="card-body">
                     <div class="form-check form-check-inline">
-                      <input type="radio" class="form-check-input" />
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        value="bovine"
+                        v-model="inputHamburger"
+                      />
                       <label class="form-check-label">Bovino</label>
                     </div>
                     <div class="form-check form-check-inline">
-                      <input type="radio" class="form-check-input" />
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        value="chicken"
+                        v-model="inputHamburger"
+                      />
                       <label class="form-check-label">Frango</label>
                     </div>
                     <div class="form-check form-check-inline">
-                      <input type="radio" class="form-check-input" />
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        value="soy"
+                        v-model="inputHamburger"
+                      />
                       <label class="form-check-label">Soja</label>
                     </div>
                   </div>
