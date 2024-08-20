@@ -5,6 +5,9 @@ const vm = new Vue({
     inputSalad: [],
     inputSauce: [],
     inputHamburger: "",
+    step: 1,
+    inputName: "",
+    inputAddress: "",
   },
   computed: {
     bread() {
@@ -63,6 +66,15 @@ const vm = new Vue({
           return "assets/img/soja.png";
         default:
           return "assets/img/default/hamburguer.png";
+      }
+    },
+  },
+  methods: {
+    placeOrder() {
+      if (this.inputTypeBread && this.inputHamburger) {
+        this.step = 2;
+      } else {
+        alert("Selecione o pão e/ou o hambúrguer");
       }
     },
   },
