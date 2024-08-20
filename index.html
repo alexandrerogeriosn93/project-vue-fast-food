@@ -48,11 +48,21 @@
                   <div class="card-header">Tipo do pão</div>
                   <div class="card-body">
                     <div class="form-check form-check-inline">
-                      <input type="radio" class="form-check-input" />
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        value="gergelim"
+                        v-model="inputTypeBread"
+                      />
                       <label class="form-check-label">Gergelim</label>
                     </div>
                     <div class="form-check form-check-inline">
-                      <input type="radio" class="form-check-input" />
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        value="australiano"
+                        v-model="inputTypeBread"
+                      />
                       <label class="form-check-label">Australiano</label>
                     </div>
                   </div>
