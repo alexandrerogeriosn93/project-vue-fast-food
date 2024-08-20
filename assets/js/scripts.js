@@ -8,6 +8,7 @@ const vm = new Vue({
     step: 1,
     inputName: "",
     inputAddress: "",
+    newAsyncOrder: null,
   },
   computed: {
     bread() {
@@ -81,7 +82,7 @@ const vm = new Vue({
       if (this.inputName && this.inputAddress) {
         this.step = 3;
 
-        setTimeout(() => this.newOrder(), 5000);
+        rhis.newAsyncOrder = setTimeout(() => this.newOrder(), 5000);
       } else {
         alert("Preencha todos os campos");
       }
@@ -94,6 +95,13 @@ const vm = new Vue({
       this.step = 1;
       this.inputName = "";
       this.inputAddress = "";
+    },
+  },
+  watch: {
+    step(newValue) {
+      if (newValue === 1) {
+        clearTimeout(this.newAsyncOrder);
+      }
     },
   },
 });
