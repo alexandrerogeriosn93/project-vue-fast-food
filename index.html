@@ -206,8 +206,39 @@
                 >
                   Voltar para o lanche
                 </button>
-                <button type="button" class="btn btn-success">
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  @click="confirmOrder()"
+                >
                   Confirmar pedido
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" v-if="step === 3">
+            <div class="row mt-2">
+              <div class="col">
+                <div class="card">
+                  <div class="card-header">Pedido confirmado</div>
+                  <div class="card-body">
+                    <p>Agora é só aguardar 10 minutinhos!</p>
+                    <p>Chamaremos você em breve :)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-2">
+              <div class="col d-flex justify-content-between">
+                <button type="button" class="btn btn-primary" @click="step = 1">
+                  Repetir pedido
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  @click="newOrder()"
+                >
+                  Novo pedido
                 </button>
               </div>
             </div>

@@ -77,5 +77,23 @@ const vm = new Vue({
         alert("Selecione o pão e/ou o hambúrguer");
       }
     },
+    confirmOrder() {
+      if (this.inputName && this.inputAddress) {
+        this.step = 3;
+
+        setTimeout(() => this.newOrder(), 5000);
+      } else {
+        alert("Preencha todos os campos");
+      }
+    },
+    newOrder() {
+      this.inputTypeBread = "";
+      this.inputSalad = [];
+      this.inputSauce = [];
+      this.inputHamburger = "";
+      this.step = 1;
+      this.inputName = "";
+      this.inputAddress = "";
+    },
   },
 });
